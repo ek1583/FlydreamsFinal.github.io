@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>FlyDream-Keep in touch</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <link rel="icon" href="styles/logo flyddreams.png" />
+</head>
+<body>
+    <header>
+        <section>
+            <div id="bannerlogo">
+                <img id="banner" src="styles/BANER LOGO-01.png" alt="banersite"/>
+                <a id="flylogo" href="index.html"> <img src="styles/logo flyddreams.png" alt="logo-Flydreams"/> </a>
+            </div>
+        </section>
+        <nav aria-label="mainNav" class="mainNAV">
+            <ol>
+                <li>
+                    <a href="#">Recommended destinations</a>
+                    <ol>
+                        <li><a href="recomended.html">Thailand</a></li>
+                        <li><a href="construction.html">Italy</a></li>
+                        <li><a href="construction.html">Madrid</a></li>
+                        <li><a href="construction.html">Switzerland</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="#">Flight tips</a>
+                    <ol>
+                        <li><a href="construction.html">Before the flight</a></li>
+                        <li><a href="construction.html">Packing hacks</a></li>
+                        <li><a href="construction.html">Travel with kids</a></li>
+                        <li><a href="construction.html">At the airport</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="#">Vacation planning</a>
+                    <ol>
+                        <li><a href="construction.html">Compare fights</a></li>
+                        <li><a href="construction.html">Compare hotels</a></li>
+                        <li><a href="construction.html">Car Rental</a></li>
+                        <li><a href="planing steps .html">planing steps</a></li>
+                        <li><a href="construction.html">Important documents</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="#">What do you pack?</a>
+                    <ol>
+                        <li><a href="what do you pack .html">Basic list</a></li>
+                        <li><a href="construction.html">For cold destination </a></li>
+                        <li><a href="construction.html">For beach vacation</a></li>
+                        <li><a href="construction.html">For family vacation</a></li>
+                    </ol>
+                </li>
+
+            </ol>
+        </nav>
+        <nav aria-label="bradcrumbs" class="breadnav">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <
+                <li class="theSitebread">Keep in touch</li>
+            </ul>
+        </nav>
+        <div id="keep in touchheader">
+            <p class="coteret">Keep in touch</p>
+            <p class="welcomeabout">We'd love to hear from you!</p>
+            <p class="paragraf">
+                 Whether you have questions, feedback, or just want to say hello, we're here to listen.<br />
+                Your thoughts and ideas are important to us, and we believe that great conversations can lead to even greater things<br />
+                Please leave your details below, and we'll get back to you as soon as possible.
+            </p>
+            <p class="welcomeabout"> Looking forward to connecting with you!</p>
+        </div>
+    </header>
+    <main>
+        <div id="backgroundform">
+            <form>
+                <label for="subject">
+                    <span class="star">*</span>
+                    <span class="welcomeabout">
+                        Subject of Inquiry:
+                    </span><br />
+                    <select id="subject" class="fontregular">
+                        <option value="flight-planning">Flight Planning</option>
+                        <option value="destination-inquiry">Destination Inquiry</option>
+                        <option value="packing-assistance">Packing Assistance</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+                <br />
+                <div class="textbox">
+                    <label for="fullname">
+                        <span class="star">*</span>
+                        <span class="welcomeabout">
+                            Full name:
+                        </span><br />
+                        <input type="text" id="textfulname" class="fontregular" placeholder="Enter first and last name" required />
+                    </label>
+                </div>
+                <br />
+                <div class="textbox">
+                    <label for="gender">
+                        <span class="star">*</span>
+                        <span class="welcomeabout">
+                            Gender:
+                        </span><br />
+                        <input type="radio" id="male" name="gender" />Man <br />
+                        <input type="radio" id="female" name="gender" />woman <br />
+                        <input type="radio" id="other" name="gender" checked />Other <br />
+                    </label>
+                </div>
+                <br />
+                <div class="textbox">
+                    <label for="emailadd">
+                        <span class="star">*</span>
+                        <span class="welcomeabout">
+                            Email: 
+                        </span><br />
+                        <input type="email" id="textemail" class="fontregular" placeholder="username@example.com" required />
+                    </label>
+                </div>
+                <br />
+                <div class="textbox">
+                    <label for="textmessage">
+                        <span class="star" id="starmessage">*</span>
+                        <span id="message"class="welcomeabout"> Massage:</span> <br />
+                        <textarea id="textmassage" class="fontregular" placeholder="How can we help you?" required ></textarea>
+                    </label>
+                </div>
+                <input type="submit" id="sendbutton" value="send" />
+
+
+            </form>
+        </div>
+        <div >
+            <img id="backgroundpic" src="styles/PLANE ICON.png" alt="planepicture"/>
+        </div>
+    </main>
+    <footer>
+        <nav aria-label="bottomNv" class="bottomnav">
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="keep in touch.html">Keep in touch</a></li>
+                <li><a href="site map.html">Site map</a></li>
+            </ol>
+        </nav>
+    </footer>
+</body>
+</html>
