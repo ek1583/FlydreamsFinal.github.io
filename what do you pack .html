@@ -14,14 +14,15 @@
 
     <!-- JS -->
     <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
     <link rel="icon" href="styles/logo flyddreams.png" />
 </head>
 <body>
     <header>
         <section>
             <div id="bannerlogo">
-                <img id="banner" src="styles/BANER LOGO-01.png" />
-                <a id="flylogo" href="index.html"> <img src="styles/logo flyddreams.png" /> </a>
+                <img id="banner" src="styles/BANER LOGO-01.png" alt="banersite" />
+                <a id="flylogo" href="index.html"> <img src="styles/logo flyddreams.png" alt="logo-Flydreams" /> </a>
             </div>
         </section>
         <nav aria-label="mainNav" class="mainNAV">
@@ -29,51 +30,150 @@
                 <li>
                     <a href="#">Recommended destinations</a>
                     <ol>
-                        <li><a href="#">Thailand</a></li>
-                        <li><a href="#">Italy</a></li>
-                        <li><a href="#">Madrid</a></li>
-                        <li><a href="#">Switzerland</a></li>
+                        <li><a href="recomended.html">Thailand</a></li>
+                        <li><a href="construction.html">Italy</a></li>
+                        <li><a href="construction.html">Madrid</a></li>
+                        <li><a href="construction.html">Switzerland</a></li>
                     </ol>
                 </li>
                 <li>
                     <a href="#">Flight tips</a>
                     <ol>
-                        <li><a href="#">Before the flight</a></li>
-                        <li><a href="#">Packing hacks</a></li>
-                        <li><a href="#">Travel with kids</a></li>
-                        <li><a href="#">At the airport</a></li>
+                        <li><a href="construction.html">Before the flight</a></li>
+                        <li><a href="construction.html">Packing hacks</a></li>
+                        <li><a href="construction.html">Travel with kids</a></li>
+                        <li><a href="construction.html">At the airport</a></li>
                     </ol>
                 </li>
                 <li>
                     <a href="#">Vacation planning</a>
                     <ol>
-                        <li><a href="#">Compare fights</a></li>
-                        <li><a href="#">Compare hotels</a></li>
-                        <li><a href="#">Car Rental</a></li>
-                        <li><a href="#">Internet package</a></li>
-                        <li><a href="#">Important documents</a></li>
+                        <li><a href="construction.html">Compare fights</a></li>
+                        <li><a href="construction.html">Compare hotels</a></li>
+                        <li><a href="construction.html">Car Rental</a></li>
+                        <li><a href="planing steps .html">planing steps</a></li>
+                        <li><a href="construction.html">Important documents</a></li>
                     </ol>
                 </li>
                 <li>
                     <a href="#">What do you pack?</a>
                     <ol>
-                        <li><a href="#">Basic list</a></li>
-                        <li><a href="#">For cold destination </a></li>
-                        <li><a href="#">For beach vacation</a></li>
-                        <li><a href="#">For family vacation</a></li>
+                        <li><a href="what do you pack .html">Basic list</a></li>
+                        <li><a href="construction.html">For cold destination </a></li>
+                        <li><a href="construction.html">For beach vacation</a></li>
+                        <li><a href="construction.html">For family vacation</a></li>
                     </ol>
                 </li>
 
             </ol>
         </nav>
-        <nav class="bottomnav">
-            <ol>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="#">Keep in touch</a></li>
-                <li><a href="#">Site map</a></li>
-            </ol>
+
+        <nav aria-label="bradcrumbs" class="breadnav">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <
+                <li class="theSitebread">what do tou pack?</li>
+            </ul>
         </nav>
     </header>
+
+    <main>
+        <h1>Let's pack together</h1>
+        <h2>Where are you flying to?</h2> <br />
+
+        <input type="text" id="flightbox" /> <br />
+
+        <h2>What season do you fly?</h2> <br />
+
+        <input type="radio" id="winter" name="season" value="winter" onclick="updateSeasonDisplay()">
+        <label for="winter">winter</label><br>
+
+        <input type="radio" id="summer" name="season" value="summer" onclick="updateSeasonDisplay()">
+        <label for="summer">summer</label><br>
+
+        <h2 class="display" id="showh2">Mark the items that are relevant to you:</h2>
+        <div class="todolist display" id="summertodolist">
+            <ul class="todo-list-summer">
+                <li class="todo-item summeritem">
+                    <input type="checkbox" id="checkbox-shirts" onclick="updateSummerItem('shirts', this)">Shirts
+                </li>
+                <li class="todo-item summeritem">
+                    <input type="checkbox" id="checkbox-skirts" onclick="updateSummerItem('skirts', this)">Skirts
+                </li>
+                <li class="todo-item summeritem">
+                    <input type="checkbox" id="checkbox-hat" onclick="updateSummerItem('hat', this)">hat
+                </li>
+                <li class="todo-item summeritem">
+                    <input type="checkbox" id="checkbox-swimsuit" onclick="updateSummerItem('swimsuit', this)">swimsuit
+                </li>
+                <li class="todo-item summeritem">
+                    <input type="checkbox" id="checkbox-flipflops" onclick="updateSummerItem('flipflops', this)">flip flops
+                </li>
+            </ul>
+        </div>
+        <div class="todolist display" id="wintertodolist">
+            <ul class="todo-list-winter">
+                <li class="todo-item winteritem">
+                    <input type="checkbox" id="checkbox-sweater" onclick="updateWinterItem('sweater', this)">sweater
+                </li>
+                <li class="todo-item winteritem">
+                    <input type="checkbox" id="checkbox-warming-pants" onclick="updateWinterItem('skirts', this)">warming pants
+                </li>
+                <li class="todo-item winteritem">
+                    <input type="checkbox" id="checkbox-stocking-cap" onclick="updateWinterItem('cap', this)">stocking cap
+                </li>
+                <li class="todo-item winteritem">
+                    <input type="checkbox" id="checkbox-socks" onclick="updateWinterItem('socks', this)">socks
+                </li>
+                <li class="todo-item winteritem">
+                    <input type="checkbox" id="checkbox-boots" onclick="updateWinterItem('boots', this)">boots
+                </li>
+            </ul>
+        </div>
+        <div id="suitcasebasic">
+            <img id="suitcasesummer" src="styles/suitcase/suitcase-07.png" />
+            <img id="skirts" class="summer-image winter-image"  src="styles/suitcase/SKIRTS-02.png" />
+
+        </div>
+
+        <div id="suitcase-SUMMER">
+
+            <img id="hat" class="summer-image" src="styles/suitcase/HAT.png" />
+            <img id="flipflops" class="summer-image" src="styles/suitcase/flip flops-02.png" />
+            <img id="swimsuit" class="summer-image" src="styles/suitcase/swimsuit-02.png" />
+            <img id="shirts" class="summer-image" src="styles/suitcase/SHIRTS-02.png" />
+
+        </div>
+
+        <div id="suitcase-WINTER">
+            <img id="sweater" class="winter-image" src="styles/suitcase/sweater-04.png" />
+            <img id="socks" class="winter-image" src="styles/suitcase/SOCKS.png" />
+            <img id="cap" class="winter-image" src="styles/suitcase/CAP HAT-02.png" />
+            <img id="boots" class="winter-image" src="styles/suitcase/boots.png" />
+        </div>
+
+        <div id="onsuitcase">
+            <img id="Onsuitcase" src="styles/suitcase/suitcase on-13.png" />
+
+        </div>
+        <input type="button" value="My bag >" onclick="summery()" id="mybagbutton" class="display showbutton" />
+        <div id="sum">
+            <span id="sumdetails"></span>
+            <span id="chekbox" ></span>
+        </div>
+    </main>
+
+    <footer>
+        <nav aria-label="bottomNv" class="bottomnav">
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="keep in touch.html">Keep in touch</a></li>
+                <li><a href="site map.html">Site map</a></li>
+            </ol>
+        </nav>
+    </footer>
 </body>
 </html>

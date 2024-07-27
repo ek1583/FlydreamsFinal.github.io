@@ -562,3 +562,177 @@ video{
     .steps li {
         padding-bottom: 30px;
     }
+
+.todolist {
+    background-color: whitesmoke;
+    position: relative;
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 3px 5px 8px #686868;
+}
+
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    position:relative;
+    left: 10px;
+}
+
+    .todo-item input[type="checkbox"] {
+        margin-right: 10px; 
+    }
+
+#suitcase-WINTER{
+    position:relative;
+}
+#suitcasesummer {
+    position: relative;
+    width: 600px;
+    left: 670px;
+    bottom: 490px;
+}
+
+#Onsuitcase {
+    position: relative;
+    width: 496px;
+    left: 716px;
+    bottom: 1402px;
+}
+
+#hat {
+    position: relative;
+    width: 263px;
+    bottom: 1252px;
+    right: -928px;
+    opacity:0;
+}
+#flipflops {
+    position: relative;
+    width: 185px;
+    left: 600px;
+    bottom: 1120px;
+    transform: rotate(298deg);
+    z-index: 1;
+    opacity: 0;
+}
+#swimsuit {
+    position: relative;
+    width: 320px;
+    bottom: 1094px;
+    left: 360px;
+    transform: rotate(305deg);
+    opacity: 0;
+}
+
+#suitcasewinter {
+    position: relative;
+    width: 600px;
+    left: 670px;
+    bottom: 1554px;
+    opacity:0;
+}
+
+#pants {
+    position: relative;
+    width: 350px;
+    bottom: 668px;
+    left: 269px;
+    opacity: 0;
+}
+
+#shirts {
+    position: relative;
+    bottom: 1040px;
+    width: 270px;
+    right: 40px;
+    opacity: 0;
+}
+
+
+#mybagbutton {
+    background-color: #5CB7DC;
+    font-size: 20px;
+    position: relative;
+    bottom: 1400px;
+    border-radius: 7px;
+
+}
+
+#skirts {
+    position: relative;
+    width: 340px;
+    bottom: 669px;
+    left: 257px;
+    opacity: 0;
+}
+#sweater {
+    position: relative;
+    width: 290px;
+    bottom: 1340px;
+    left: 720px;
+    opacity: 0;
+}
+#socks {
+    position: relative;
+    width: 290px;
+    bottom: 1340px;
+    left: 470px;
+    opacity: 0;
+}
+#cap {
+    position: relative;
+    width: 180px;
+    bottom: 1530px;
+    left: 380px;
+    opacity: 0;
+}
+#boots {
+    position: relative;
+    width: 120px;
+    bottom: 1400px;
+    left: 200px;
+    transform: rotate(327deg);
+    opacity: 0;
+}
+
+div#sum {
+    position: relative;
+    bottom: 0;
+    font-size: 25px;
+}
+
+span#sumdetails {
+    position: relative;
+    bottom: 1388px;
+    font-size: 25px;
+}
+
+input[type="radio"] + label {
+    font-size: 22px;
+}
+.display {
+    opacity: 0;
+}
+#wintertodolist {
+    position: relative;
+    right: 200px;
+    display:none;
+}
+#summertodolist {
+    z-index: 1; /* שים ערך נמוך כדי שהקיץ יהיה מתחת לחורף */
+}
+
+#wintertodolist {
+    z-index: 2; /* שים ערך גבוה כדי שהחורף יהיה מעל לקיץ */
+}
+
+.underline {
+    text-decoration: underline;
+}
